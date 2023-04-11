@@ -43,24 +43,35 @@ h1.cabecalho {
     font-family: var(--fonte-destaque);
     margin-bottom: 10px;
     font-size: 3em;
-    text-shadow: 25px 20px 5px black;
+    text-shadow: 25px 10px 3px black;
 }
 
-p {
+p.primeiro {
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
-    text-shadow: 15px 15px 5px black;
+    text-shadow: 10px 10px 3px black;
 }
 
 nav {
     background-color: var(--cor4);
     padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.575);
 }
 
 nav a {
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-family: var(--fonte-android);
+    color: var(--cor5);
 }
