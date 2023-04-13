@@ -33,27 +33,28 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     text-align: center;
     color: white;
     padding: 50px;
 }
 
 h1.cabecalho {
-    font-family: var(--fonte-destaque);
-    margin-bottom: 10px;
+    font-family: var(--fonte-destaque);  
     font-size: 3em;
     text-shadow: 25px 10px 3px black;
+    color: white;
 }
 
 p.primeiro {
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
     text-shadow: 10px 10px 3px black;
+    padding-top: 10px;
 }
 
 nav {
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -69,9 +70,45 @@ nav a {
     margin-bottom: 10px;
 }
 
+nav a:hover {
+    background-color: #2fa866;
+    color: #063d1e;
+    transition: .8s;
+}
+
 h1 {
     margin: 20px;
     text-align: center;
     font-family: var(--fonte-android);
     color: var(--cor5);
+    padding: 30px;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 20px;
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 10px;
+}
+
+main {
+    background-color: white;
+    max-width: 1280px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+}
+
+p {
+    font-family: var(--fonte-padrao);
+    text-indent: 20px;
+    font-size: 1.1em;
+}
+
+img {
+    margin: 20px;
+    min-width: 500px;
+    
 }
