@@ -34,23 +34,29 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
     text-align: center;
-    color: white;
-    padding: 50px;
+    padding: 40px;
 }
 
-h1.cabecalho {
+header h1 {
     font-family: var(--fonte-destaque);  
     font-size: 3em;
+    margin-bottom: 20px;
     text-shadow: 25px 10px 3px black;
     color: white;
 }
 
-p.primeiro {
+header p {
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
     text-shadow: 10px 10px 3px black;
-    padding-top: 10px;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-align: center;
+    color: white
 }
 
 nav {
@@ -71,9 +77,11 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #2fa866;
+    background-color: var(--cor3);
     color: #063d1e;
-    transition: .8s;
+    transition: .7s;
+    text-decoration: underline;
+    border-radius: 3px;
 }
 
 h1 {
@@ -88,6 +96,7 @@ h1 {
 h2 {
     margin: 20px;
     font-family: var(--fonte-android);
+    font-size: 1.3em;
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 10px;
@@ -95,20 +104,163 @@ h2 {
 
 main {
     background-color: white;
-    max-width: 1280px;
-    padding: 10px;
+    min-width: 300px;
+    max-width: 1028px;
+    padding: 20px;
     margin: auto;
-    box-shadow: 0px 0px 10px black;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 15px rgb(0, 0, 0);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%;  
+}
+
+main img.pequena {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bolder;
+}
+
+main a {
+    color: var(--cor5);
+    background-color: var(--cor1);
+    font-weight: bolder;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4)
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
 }
 
 p {
+    margin: 15px 0 15px 0;
     font-family: var(--fonte-padrao);
     text-indent: 20px;
     font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.6em;
 }
 
-img {
-    margin: 20px;
-    min-width: 500px;
+
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    padding: 20px;
+    margin:  0px -2px 30px -2px;
+    padding-bottom: 55%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.562);
+}
+
+div.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main article aside.ul {  
+    margin-left: 20px;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.562);
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
+aside ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    background-color: var(--cor4);
+    font-size: 1em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+@media only screen and (max-width: 450px) {
+
+    nav {
+        font-size: .7em;
+    }
+
+    main {
+        background-color: var(--cor0);
+    }
     
+    header {
+        background-color: var(--cor4);
+        background-image: none;
+    }
+
+    header h1 {
+        font-size: 1.88em;
+        margin: auto;
+        text-shadow: none;
+    }
+    
+    header p {
+        font-size: 1em;
+        padding: 0;
+        text-shadow: 0 0 BLACK;
+        font-weight: bold;
+    }
+
+    article {
+        font-size: .88em;
+    }
+
+    article h1 {
+        font-size: 1.5em;
+        padding: 10px;
+        margin: auto;
+        width: 300px;
+    }
+
+    footer {
+        font-size: .83em;
+    }
 }
